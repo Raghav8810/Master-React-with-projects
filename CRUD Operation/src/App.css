@@ -4,3 +4,46 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+h1{
+  text-align: center;
+  padding: 30px;
+}
+h2{
+  text-align: center;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  width: 600px;
+  height: 400px;
+
+}
+
+.read-table{
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+ 
+}
+
+.togle{
+  
+  padding: 20px 40px;
+  color: white;
+  background-color: white;
+}
+.toglediv{
+  margin: 0 100px;
+  display: flex;
+  gap: 30px;
+}
