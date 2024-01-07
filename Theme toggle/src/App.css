@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* if background light this colors apply on whole application */
+[data-theme="light"]{
+  --bgcolor: white;
+  --text-color: #333333;
+  --heading-color: #444444;
+} 
+
+/* if background dark this colors apply on whole application */
+[data-theme="dark"]{
+  --bgcolor: rgb(37, 37, 37);
+  --text-color: #f1f1f1;
+  --heading-color: #e4e4e4;
+} 
+
+body{
+  background-color: var(--bgcolor);
+}
+
+
+
+h1{
+  font-size: 3rem;
+  color: var(--heading-color)
+  
+
+}
+
+.nav{
+  width: 300px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.switch label{
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  margin-left: 10px;
+}
+.switch .slider{
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: #ccc;
+   transition: 0.4s;
+   border-radius: 20px;
+}
+
+.switch input:checked + .slider{
+  background-color: aquamarine;
+}
+
+.switch .slider::before{
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+
+}
+
+
+.switch input:checked +  .slider::before{
+  transform: translateX(20px);
+}
