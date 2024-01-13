@@ -4,10 +4,11 @@ import { UseTheme } from '../ThemeContext'
 
 const Navbar = () => {
    const{theme,toggleTheme }=  UseTheme();
-   //nav
+   //navbar
 
   return (
     <div>
+    
          <div className='nav'>
            <Link to="/">Home</Link>
            <Link to="/about">About</Link>
