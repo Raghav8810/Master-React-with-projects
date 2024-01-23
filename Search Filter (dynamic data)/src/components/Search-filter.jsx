@@ -3,8 +3,8 @@ import { Data } from "./Api"
 
 
 const Searchfilter = () => {
-  const [search, setSearch] = useState([]);
-  const[filtervalue, setfiltervalue] = useState('');
+  const [search, setSearch] = useState([]); //search state
+  const[filtervalue, setfiltervalue] = useState(''); //filter usestate
    
   const [SearchApiData, setSearchApiData] = useState([]); // use to search from api
 
