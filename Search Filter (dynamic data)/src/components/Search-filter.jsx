@@ -11,14 +11,20 @@ const Searchfilter = () => {
    
 
    useEffect(()=>{
-    Data().then((users) => {
-        setSearch(users)
-        setSearchApiData(users)
+   //  Data().then((users) => {
+   //      setSearch(users)
+   //      setSearchApiData(users)
      
-    })
+   //  })
+   Data().then((users) =>{
+      setSearch(users)
+      setSearchApiData(users)
+   })
    },[])
 
    const handleFilter =(e)=>{
+        
+
             if(e.target.value == ''){
                setSearch(SearchApiData)
             }else{
@@ -26,6 +32,7 @@ const Searchfilter = () => {
                setSearch(filterResult);
             }
             setfiltervalue(e.target.value)
+
    }
 
 
