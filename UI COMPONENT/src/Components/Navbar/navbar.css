@@ -1,0 +1,73 @@
+nav{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 60px;
+    background-color: rgb(137, 132, 132);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+ 
+    
+}
+.active{
+    background-color: red;
+}
+
+ul{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    
+}
+ul li{
+list-style: none;
+}
+
+button{
+     padding: 10px 30px;
+
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu .icon-1{
+   display: none;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    ul{
+        display: none;
+    }
+   .mobile{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-top: 230px;
+        width: 100%;
+         align-items: center;
+        gap: 30px;
+         justify-content: center;
+         transition: 3s ease-in
+    }
+    button{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+   
+    .mobile-menu .icon-1{
+        display: block;
+     }
+  }

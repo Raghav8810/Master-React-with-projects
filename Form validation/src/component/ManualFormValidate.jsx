@@ -27,6 +27,7 @@ const ManualFormValidate = () => {
             ...formdata, 
             [name]: value,
           })
+         
     }
 
     //handle checckbox input

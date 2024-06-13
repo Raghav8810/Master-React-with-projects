@@ -5,3 +5,11 @@
 .inactive{
   color: black;
 }
+
+
+.on{
+  color: black;
+}
+.of{
+  color: gray;
+}

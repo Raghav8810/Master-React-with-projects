@@ -1,0 +1,36 @@
+
+.carou{
+    position: relative;
+     
+    padding: 20px;
+}
+.card{
+    background-color: black;
+   min-width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+
+.container{
+    padding: 0 12px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+button{
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background:transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+.right{
+    right: 0;
+}
