@@ -11,6 +11,7 @@ interface Author{
 const TopSeller = () => {
     const[authors, setAuthor] = useState<Author[]>([])
 
+    
   useEffect(()=> {
     const fetchData = async () => {
         try {
